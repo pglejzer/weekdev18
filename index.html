@@ -10,12 +10,18 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header class="header" id="home">
         <nav class="nav" id="nav">
-            <ul class="nav__ul">
+            <ul class="nav__ul" id="menu">
                 <li class="nav__li nav__li--noline">
                     <a href="#home" class="nav__link">home</a>
                 </li>
@@ -38,6 +44,9 @@
                     <a href="#contact" class="nav__link">contact</a>
                 </li>
             </ul>
+            <button class="nav__button--toggle" id="menu-button">
+                    <img alt="show menu" src="images/menu.png" class="nav__logo--hamburger">
+            </button>
         </nav>
         <div class="header__title">
             <h2 class="header__h2">Hello, I AM</h2>
@@ -307,8 +316,8 @@
                     </div>
                 </div>
                 <div class="contact__button">
-                <button class="contact__btn" type="button">Send Message</button>
-            </div>
+                    <button class="contact__btn" type="button">Send Message</button>
+                </div>
             </div>
         </div>
     </section>
