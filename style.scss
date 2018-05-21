@@ -120,17 +120,18 @@ body {
         }
     }
     .nav__sticky {
-        height: 75px;
-        box-shadow: 2px 2px 2px rgba(162,26,240, 0.7);
-        transition: 1s ease-in;
+        height: 95px;
         background: rgb(21,38,62);
-        opacity: 0.95;
+        box-shadow: 2px 2px 2px rgba(162,26,240, 0.7);
+        opacity: 0.90;
+        transition: all 1s ease-in-out;
     }
 }
 
 
 .about {
     min-height: 597px;
+    height: auto;
     background: url(../images/photo.png) no-repeat center;
     .about__container {
         display: flex;
@@ -310,8 +311,7 @@ body {
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 2.7px;
-        padding-top: 120px;
-        padding-bottom: 101px;
+        padding: 120px 10px 101px 10px;
     }
     .testimonials__container {
         display: flex;
@@ -345,6 +345,8 @@ body {
             }
             .testimonials__images--photo {
                 border-radius: 100%;
+                width: 140px;
+                height: 140px;
                 border: 8px solid #fff;
             }
             .testimonials__h5 {
@@ -356,7 +358,6 @@ body {
                 padding-top: 40px;
                 padding-left: 40px;
                 .testimonials__span {
-                    /* Style for "Graphic De" */
                     color: #c714d5;
                     font-size: 15px;
                     font-weight: 600;
@@ -432,6 +433,7 @@ body {
 .experience {
     padding: 120px 0;
     color: $white-color;
+    height: auto;
     min-height: 1000px;
     background-image: linear-gradient(41deg, #a21af0 0%, #ff0072 100%);
     .expierence__h2 {
@@ -458,6 +460,7 @@ body {
             flex-direction: row;
             flex-wrap: wrap;
             margin-bottom: 100px;
+            padding-left:20px;
             .experience__column {
                 display: flex;
                 flex-direction: column;
@@ -495,6 +498,7 @@ body {
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
+            padding-right:20px;
         }
     }
 }
@@ -514,7 +518,6 @@ body {
     }
     .blog__p {
         text-align: center;
-        /* Style for "Lorem ipsu" */
         color: #4d4d4d;
         font-size: 18px;
         font-weight: 400;
@@ -530,6 +533,7 @@ body {
             flex-direction: column;
             flex-wrap: wrap;
             text-align: left;
+            padding: 20px;
             .blog__img {
                 max-width: 371px;
             }
@@ -554,9 +558,6 @@ body {
                 font-weight: 400;
                 line-height: 30px;
             }
-        }
-        .blog__column--center {
-            margin: 0 40px;
         }
     }
 }
@@ -651,7 +652,8 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding-top: 66px;
+        text-align: center;
+        padding: 66px 20px 0 20px;
         .footer__p {
             color: #494949;
             font-size: 15px;
