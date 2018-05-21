@@ -20,13 +20,11 @@ body {
     background-size: cover;
     .nav__button--toggle {
         display: none;
-        border: 0;
-        width: 30px;
-        height: 30px;
+        border: none;
         cursor: pointer;
-        opacity: 0.7;
-        margin-bottom: 10px;
+        padding: 10px;
         background: none;
+        outline: none;
     }
     .nav {
         background-color: $bg-color-nav;
