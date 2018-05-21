@@ -107,7 +107,7 @@
                 position: fixed;
                 float: right;
                 padding: 10px;
-                z-index: 1409;
+                z-index: 99999;
                 margin-right: 50px;
                 .nav__logo--hamburger {
                     width: 50px;
@@ -165,10 +165,11 @@
     .about {
         background: none;
         position: relative;
+        z-index: -1;
         &::before {
             content: "";
             position: absolute;
-            z-index: -1;
+            z-index: -2;
             top: 210px;
             bottom: 0;
             left: 0;
